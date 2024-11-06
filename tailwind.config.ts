@@ -18,7 +18,8 @@ const config: Config = {
   			}
   		},
 		colors:{
-			grays:"#f0f3f9"
+			grays:"#f0f3f9",
+			grays01:"#e4e4e4"
 		}
   	}
   },

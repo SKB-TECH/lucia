@@ -3,7 +3,7 @@ import { Bannier, SectionI, SectionII } from '../components'
 
 const page = () => {
   return (
-    <section className='flex flex-col  items-center justify-around'>
+    <section className='flex flex-col  items-center justify-around h-full'>
        <Bannier />
        <div className='!bg-grays w-full h-44 hidden lg:flex'>
        </div>

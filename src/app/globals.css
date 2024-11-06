@@ -6,7 +6,9 @@
     background-image: url("../assets/bannier.jpg");
 }
 
-
+.con{
+    background-image: url("../assets/contact.jpg");
+}
 .cad::after {
     display: block;
     position: absolute;

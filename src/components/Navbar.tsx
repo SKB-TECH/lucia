@@ -7,7 +7,8 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import { CustomButton } from ".";
-
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 // fin items
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
     // const [opense, setOpense] = useState(false);
     const [active, setActive] = useState(false);
     const [isScroll, setIsScroll] = useState(false);
-
+    const router=useRouter()
 
     
 
@@ -57,10 +58,18 @@ const Navbar = () => {
                 </div>
                 <div className='hidden ml-32 lg:flex items-center justify-center    h-full p-6'>
                     <ul className='flex items-center justify-center  w-full gap-12 h-full p-6 '>
-                        <li className="cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">Accueil</li>
-                        <li className="cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">Services</li>
-                        <li className="cursor-pointer hover:text-colorRed text-gray-500 font-semibold  ">Apropos</li>
-                        <li className="cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">Blog</li>
+                        <li className="hover:text-blue-900 hover:cursor-pointer cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">
+                            <Link href={"/"}>Accueil</Link>
+                        </li>
+                        <li className="hover:text-blue-900 hover:cursor-pointer cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">
+                            <Link href={"/service"}>Services</Link>
+                        </li>
+                        <li className="hover:text-blue-900 hover:cursor-pointer cursor-pointer hover:text-colorRed text-gray-500 font-semibold  ">
+                            <Link href={"/about"}>Apropos</Link>
+                        </li>
+                        <li className="hover:text-blue-900 hover:cursor-pointer cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">
+                            <Link href={"/blog"}>Blog</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className='md:flex-1 text-xl mr-2 ml-20'>
@@ -69,7 +78,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="hidden lg:flex flex-row justify-end gap-5">
-                    <CustomButton title="Nous Contacter" isborder={true}/>
+                    <CustomButton title="Nous Contacter" isborder={true} onClique={()=>router.push("/contact")}/>
                     <CustomButton title="Connexion"/>
                 </div>
             </div>
@@ -99,9 +108,22 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='my-4 border-b border-gray-300'>
-                        <p className='w-[85%] md:w-[90%] py-4 mx-auto '>
-                            Que voulez-vous faire ?
-                        </p>
+                        <div className='flex items-center     h-full p-6'>
+                        <ul className='flex flex-col   w-full gap-12 h-full p-2'>
+                            <li className="hover:text-blue-900 hover:cursor-pointer cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">
+                                <Link href={"/"} onClick={handlClic}>Accueil</Link>
+                            </li>
+                            <li className="hover:text-blue-900 hover:cursor-pointer cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">
+                                <Link href={"/service"} onClick={handlClic}>Services</Link>
+                            </li>
+                            <li className="hover:text-blue-900 hover:cursor-pointer cursor-pointer hover:text-colorRed text-gray-500 font-semibold  ">
+                                <Link href={"/about"} onClick={handlClic}>Apropos</Link>
+                            </li>
+                            <li className="hover:text-blue-900 hover:cursor-pointer cursor-pointer hover:text-colorRed text-gray-500 font-semibold ">
+                                <Link href={"/blog"} onClick={handlClic}>Blog</Link>
+                            </li>
+                        </ul>
+                    </div>
                     </div>
 
                 </div>

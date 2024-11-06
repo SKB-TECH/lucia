@@ -1,4 +1,6 @@
-
+import { RiMapPinLine } from "react-icons/ri";
+import { FaPhone } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
 
 export const dataFooter=[
     {
@@ -63,5 +65,26 @@ export const pourquoi=[
     {
         title:"Engagement envers l'Excellence",
         id:5
+    }
+]
+
+export const adressData=[
+    {
+        id:1,
+        titre:"Addresse",
+        icon:  <RiMapPinLine color='white' size={28}/>,
+        title:"Boulevard Kanyamuhnga, rond-point Chukudu, Goma, RDC"
+    },
+    {
+        id:2,
+        titre:"Telephone",
+        icon:  <FaPhone color='white' size={28}/>,
+        title:"+243 994 213 627"
+    },
+    {
+        id:3,
+        titre:"Email",
+        icon:  <MdOutlineEmail color='white' size={28}/>,
+        title:"lucia@info.com"
     }
 ]
