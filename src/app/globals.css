@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bar{
+    background-image: url("../assets/bannier.jpg");
+}
+
+
+.cad::after {
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 10%;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 5;
+    transform: scaleX(0) translateZ(0);
+    -webkit-transform: scaleX(0) translateZ(0);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transition: 0.45s cubic-bezier(0.24,1,0.30,1);
+    transition: 0.45s cubic-bezier(0.24,1,0.30,1);
+    background-color: #dd3333;
+}
+
+.cad:hover::after {
+    -webkit-transform: scaleX(1) translateZ(0);
+    transform: scaleX(1) translateZ(0);
+}
+.cad{
+    animation: reviewFullAnimation 1s ease-in-out forwards;
+}
