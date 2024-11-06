@@ -6,3 +6,5 @@ export {default as SectionII} from "./SectionII";
 export {default as Footer} from "./Footer";
 export {default as BannierContact} from "./BannierContact";
 export {default as SectionForm} from "./SectionForm";
+export {default as BannierAbout} from "./BannierAbout";
+export {default as SectionIAbout} from "./SectionIAbout";

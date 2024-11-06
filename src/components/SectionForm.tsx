@@ -34,7 +34,7 @@ const SectionForm = () => {
                     </div>
                     <hr className='bg-blue-900 w-full h-[1px]'></hr>
                     <h3 className='text-blue-900'>Pour ne rien rater suivez-nous aussi sur : </h3>
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 mb-3'>
                             <div className='w-12 h-12 rounded-full flex  items-center justify-center bg-blue-900'>
                             <FaLinkedin  color='white' size={25}/>
                             </div>
@@ -59,7 +59,7 @@ const SectionForm = () => {
                         <p className='mt-2 text-gray-500 text-left text-sm'>
                             {"Après l'envoi du message notre service va te contact pour en parle d'avantage"}
                         </p>
-                        <CustomButton title='Envoyer' styles='w-full mt-5 rounded-none'/>
+                        <CustomButton title='Envoyer' styles='w-full mt-5 '/>
                     </div>
                    
                 </div>

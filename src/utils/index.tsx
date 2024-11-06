@@ -78,7 +78,7 @@ export const adressData=[
     {
         id:2,
         titre:"Telephone",
-        icon:  <FaPhone color='white' size={28}/>,
+        icon:  <FaPhone color='white' size={25}/>,
         title:"+243 994 213 627"
     },
     {
